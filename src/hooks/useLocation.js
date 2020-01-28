@@ -32,7 +32,7 @@ export default (shouldTrack, callback) => {
       if (subscriber) {
         subscriber.remove();
       }
-      setSubscriber(null);
+      subscriber = null;
     }
 
     return () => {
